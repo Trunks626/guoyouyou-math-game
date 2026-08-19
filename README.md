@@ -1,32 +1,26 @@
-# React + TypeScript + Vite
+# 郭酉酉学算术
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+一个专为小朋友设计的 20 以内加减法学习游戏。
 
-Currently, two official plugins are available:
+## ✨ 功能特色
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **📚 学习模式**：用可爱的动画物体演示加减法原理
+- **🎮 练习模式**：三个难度等级，互动答题即时反馈
+- **🏆 成就系统**：累计星星、正确率统计、连续答对奖励
+- **🎨 精美设计**：卡通风格界面，专为儿童优化
 
-## React Compiler
+## 🎯 难度分级
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| 等级 | 范围 | 说明 |
+|------|------|------|
+| 🌱 入门 | 10以内 | 适合刚开始学习的小朋友 |
+| 🔥 进阶 | 15以内 | 巩固基础后的提升 |
+| 👑 挑战 | 20以内 | 全面掌握加减法 |
 
-## Expanding the Oxlint configuration
+## 🛠️ 技术栈
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- React 19 + TypeScript
+- Vite 8
+- Tailwind CSS 4
+- Framer Motion
+- Capacitor
