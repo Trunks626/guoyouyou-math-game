@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kid-yellow: #FFD93D;
+  --color-kid-orange: #FF8C42;
+  --color-kid-pink: #FF6B9D;
+  --color-kid-blue: #4ECDC4;
+  --color-kid-green: #96CEB4;
+  --color-kid-purple: #C9B1FF;
+  --color-kid-red: #FF6B6B;
+  --color-kid-cream: #FFF9F0;
+  --color-kid-dark: #2D3436;
+}
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'YouYuan', 'Microsoft YaHei', cursive, sans-serif;
+    background: linear-gradient(135deg, #FFF9F0 0%, #FFE4E1 50%, #E0F7FA 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+  }
+}
+
+@layer components {
+  .btn-kid {
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    font-family: 'Comic Sans MS', 'YouYuan', 'Microsoft YaHei', cursive, sans-serif;
+  }
+  .btn-kid:active {
+    transform: scale(0.95);
+  }
+
+  .btn-kid-primary {
+    background: #FFD93D;
+    color: #2D3436;
+    border: 4px solid #FF8C42;
+  }
+  .btn-kid-primary:hover {
+    background: #FF8C42;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .btn-kid-blue {
+    background: #4ECDC4;
+    color: white;
+    border: 4px solid #4ECDC4;
+  }
+  .btn-kid-blue:hover {
+    background: #06b6d4;
+    transform: translateY(-2px);
+  }
+
+  .btn-kid-green {
+    background: #96CEB4;
+    color: #2D3436;
+    border: 4px solid #34d399;
+  }
+  .btn-kid-green:hover {
+    background: #34d399;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .btn-kid-pink {
+    background: #FF6B9D;
+    color: white;
+    border: 4px solid #f472b6;
+  }
+  .btn-kid-pink:hover {
+    background: #f472b6;
+    transform: translateY(-2px);
+  }
+
+  .card-kid {
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    border: 4px solid #4ECDC4;
+    background: white;
+  }
+
+  .number-display {
+    font-size: 3.75rem;
+    font-weight: 700;
+    font-family: 'Comic Sans MS', 'YouYuan', cursive;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  }
+}
+
+@layer utilities {
+  .text-shadow-kid {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  }
+}
